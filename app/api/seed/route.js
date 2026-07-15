@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { getDb } from '@/lib/mongodb';
 
+export const dynamic = 'force-dynamic';
+
 const ALL_PERMISSIONS = [
   'dashboard_view','users_view','users_create','users_edit','users_delete',
   'roles_view','roles_create','roles_edit','roles_delete',
